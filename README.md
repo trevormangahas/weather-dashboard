@@ -13,7 +13,7 @@ This application allows people to see the weather for various cities. People wil
 * Server Side API
 
 ## Link
-insert link
+https://trevormangahas.github.io/weather-dashboard/
 
 ## Contribution
 Made by Trevor Mangahas
