@@ -1,0 +1,140 @@
+:root {
+    --header: #1A535C;
+    --teal:#4ECDC4;
+    --lighterTeal: #F7FFF7;
+    --cardBackground: #FFE66D;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--teal);
+    background-image: url('../background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header {
+    margin: 10px auto;
+    width: 50%;
+    background-color: var(--header);
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    box-shadow:3px 3px 3px lightgray;
+    text-align: center;
+    height: 75px;
+    color: white;
+}
+header h1 {
+    padding-top: 10px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+aside {
+    color: white;
+    flex: 1 1 200px;
+    margin: 0 10px;
+    text-align: center;
+}  
+    aside input {
+        width: 100%;
+        text-align: center;
+    }
+    aside .btn {
+        margin: 10px 0;
+        width: 100%;
+    }
+    aside #searchHistoryUL {
+        color: black;
+        margin: 5px 0;
+        padding: 10px 0 0 0 ;
+        border-top: 3px solid black;
+    }
+    aside .searchItem {
+        text-align: center;
+        margin: 10px 0;
+        list-style: none;
+        background-color: lightblue;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px darkslategray;
+        padding: 5px;
+    }
+
+#weatherDIV {
+    display: none;
+    flex: 8 0 350px;
+    background-color: var(--cardBackground);
+}
+.weatherSection {
+    background-color: var(--lighterTeal);
+    flex: 1 0 350px;
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px darkslategray;
+}
+#currentWeatherDIV h1 {
+    color: black
+}
+
+#forecastDIV {
+    flex: 1 0 350px;
+    color: black;
+}
+#forecastDIV ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    flex-direction: row;
+}
+#forecastDIV .dayCard {
+    margin: 5px 10px;
+    padding: 10px 10px;
+    
+    flex: 1 0 150px;
+    /* border: 2px solid darkslategray; */
+    /* border-radius: 5px; */
+    /* box-shadow: 1px 1px 1px darkslategray; */
+    
+}
+
+footer {
+    font-size: .75rem;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.custom-button{
+    background-color: var(--cardBackground);
+    box-shadow: 1px 1px 1px darkslategray;
+}
+.custom-button:hover {
+    background-color: #FF6B6B;
+}
+
+@media screen and (max-width: 800px) {
+    header h1 {
+        padding-top: 12px;
+        font-size: 1.5rem;
+    }
+}
+@supports (-webkit-touch-callout: none) {
+    body {
+        background-image: url('../background.jpeg') center top no-repeat scroll;
+        background-size: auto 100vh;
+    }    
+    }
